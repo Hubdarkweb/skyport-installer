@@ -23,6 +23,7 @@ fi
 echo_message "* Installed Node"
 
 # Create directory, clone repository, and install files
+cd /etc
 git clone https://github.com/DevX-77/skyport-daemon
 cd skyport-daemon/ || { echo_message "Failed to change directory to panel"; exit 1; }
 clear
@@ -30,7 +31,6 @@ clear
 echo_message "* Installed Daemon"
 
 # Create directory, clone repository, and install files
-git branch
 vi config.json #:q1
 npm install
 clear
