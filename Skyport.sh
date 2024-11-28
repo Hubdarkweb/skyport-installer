@@ -29,15 +29,15 @@ clear
 echo_message "* Installed Panel"
 
 # Create directory, clone repository, and install files
-git clone https://github.com/DevX-77/skyport-panel
-cd skyport-panel || { echo_message "Failed to change directory to panel"; exit 1; }
+git clone https://github.com/Hubdarkweb/panel5
+cd panel5 || { echo_message "Failed to change directory to panel"; exit 1; }
 clear
 
 echo_message "* Installed Skyport"
 
 # Create directory, clone repository, and install files
 cd ..
-mv skyport-panel skyport
+mv panel5 skyport
 cd skyport/
 npm install
 clear
